@@ -3,7 +3,7 @@
 Add to your classpath
 ```yaml
 <dependency>
-    <groupId>ru.rnemykin.spring</groupId>
+    <groupId>ru.rnemykin.spring.boot</groupId>
     <artifactId>auto-configuration-properties-spring-boot-starter</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 </dependency>
