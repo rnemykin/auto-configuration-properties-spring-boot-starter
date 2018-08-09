@@ -9,5 +9,21 @@ Add to your classpath
 </dependency>
 ```
 
-Write code and forget about @EnableConfigurationProperties.
-Starter will automatically register @ConfiguratioProperties classes 
+Write code 
+```java
+@ConfigurationProperties("app")
+public class AppProperties {
+    String apiUrl;
+    
+    //getters & setters
+}
+```
+
+and forget about _@EnableConfigurationProperties_.
+Starter will automatically register @ConfigurationProperties classes to context.
+
+Now you can inject it in other beans
+```java
+@Autowired
+AppProperties properties;
+```
